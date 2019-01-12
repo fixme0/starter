@@ -1,0 +1,8 @@
+{
+  "data": [
+    { "text": "Главная", "link": "/", "icon": "facebook" },
+    { "text": "Инфа", "link": "/info", "icon": "instagram" },
+    { "text": "Прикол", "link": "/prikol", "icon": "twitter" },
+    { "text": "Контакты", "link": "/contact", "icon": "youtube" }
+  ]
+}

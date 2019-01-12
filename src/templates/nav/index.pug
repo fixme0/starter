@@ -1,0 +1,9 @@
+- const { data } = require('./data.json');
+
+nav
+  ul
+    each item in data
+      li
+        svg
+          use(xlink:href=`images/sprite.svg#${item.icon}`)
+        a(href=item.link)= item.text
