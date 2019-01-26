@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Gilroy-ExtraBold';
+  src: url('../../fonts/Gilroy-ExtraBold.eot');
+  src: url('../../fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+      url('../../fonts/Gilroy-ExtraBold.woff') format('woff'),
+      url('../../fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

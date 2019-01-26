@@ -1,0 +1,8 @@
+- const navItems = require('database/nav').data;
+
+nav
+  ul.lol
+    each navItem in navItems
+      li
+        +svg('f')
+        a(href= navItem.link)= navItem.text

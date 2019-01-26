@@ -1,10 +1,15 @@
+include templates/mixins/svg.pug
+
 html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title D
+    title Document
   body
-    h1 1
-    include ./templates/nav/index.pug
-    include ./templates/footer/index
+    p test texts
+
+    img(src= require('./images/f.svg'), alt="facebook")
+    img(src= require('./images/test.jpg'), alt="facebook")
+
+    include templates/elements/nav.pug
