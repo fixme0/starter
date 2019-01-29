@@ -5,8 +5,9 @@ import SpriteLoaderPlugin from 'svg-sprite-loader/plugin';
 
 // instruments
 import appPaths from './paths';
+import { getJsRules, getStyleRules, getFilesRules, getTemplateRules } from './rules';
 
-export const webpackCommon = ({ isDevelopment }) => {
+export const webpackCommon = ({ isDevelopment, mode }) => {
   const { entryPath, templatePath, outputPath } = appPaths;
 
   return {
@@ -33,6 +34,15 @@ export const webpackCommon = ({ isDevelopment }) => {
     resolve: {
       modules: ['src', 'node_modules'],
       extensions: ['*', '.js', '.sass', '.css', '.jsx', '.json']
+    },
+
+    module: {
+      rules: [
+        getJsRules(mode),
+        getStyleRules(mode),
+        ...getFilesRules(mode),
+        getTemplateRules(mode)
+      ]
     },
 
     plugins: [

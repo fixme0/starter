@@ -10,7 +10,7 @@ export default (...[, { mode }]) => {
   const isDevelopment = mode === 'development';
 
   return webpackMerge(
-    webpackCommon({ isDevelopment }),
+    webpackCommon({ isDevelopment, mode }),
     isDevelopment ? webpackDevConfig(mode) : webpackProdConfig(mode)
   );
 };
