@@ -44,7 +44,6 @@
 # -----------------------------------------------------------------
 
 # ignore all files starting with . or ~
-.*
 ~*
 
 # ignore node/grunt dependency directories
