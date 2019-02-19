@@ -10,14 +10,14 @@ export const getFilesRules = (mode) => {
     {
       test: /\.(png|jpe?g|gif|svg)$/, 
       loader: 'file-loader', 
-      options: { name: `${imagesFolder}/[name].[ext]`, publicPath: isProd ? '../' : '' },
+      options: { name: `${imagesFolder}/[name].[ext]` },
       include: [ resolve(root, 'src', imagesFolder) ],
       exclude: [ resolve(root, 'src', svgFolder) ]
     },
     { 
       test: /\.(ttf|eot|woff|woff2)$/, 
       loader: 'file-loader', 
-      options: { name: `${fontsFolder}/[name].[ext]`, publicPath: isProd ? '../' : '' } 
+      options: { name: `${fontsFolder}/[name].[ext]` } 
     },
     {
       test: /\.svg$/,
